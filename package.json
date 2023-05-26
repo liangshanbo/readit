@@ -1,0 +1,30 @@
+{
+  "name": "readit",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.js",
+  "author": {
+    "name": "longhai.wang"
+  },
+  "description": "第一个electron应用",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "app:dist": "electron-builder",
+    "start": "nodemon --exec electron . --watch ./ --ext .js .html .css .vue"
+  },
+  "dependencies": {
+    "got": "^11.8.6",
+    "randomstring": "^1.2.3",
+    "normalize.css": "^8.0.1",
+    "stylus": "^0.59.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "electron": "^24.3.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "electron-builder": "^23.6.0",
+    "vite": "^4.3.2"
+  }
+}
